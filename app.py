@@ -8,11 +8,12 @@ import pickle
 with open('random_forest_model.pkl', 'rb') as file:
     model = pickle.load(file)
     
-pre = pd.read_csv('C:\\Users\\ucino\\sih project\\pridiction_model\\dataset\\precautions_df.csv')
-medic = pd.read_csv('C:\\Users\\ucino\\sih project\\pridiction_model\\dataset\\medications.csv')
-diet = pd.read_csv('C:\\Users\\ucino\\sih project\\pridiction_model\\dataset\\diets.csv')
-workout = pd.read_csv('C:\\Users\\ucino\\sih project\\pridiction_model\\dataset\\workout_df.csv')
-discription = pd.read_csv('C:\\Users\\ucino\\sih project\\pridiction_model\\dataset\\description.csv')
+pre = pd.read_csv('D:\\ML\\Medicine-Recommendaton-system-main\\dataset\\precautions_df.csv')
+medic = pd.read_csv('D:\\ML\\Medicine-Recommendaton-system-main\\dataset\\medications.csv')
+diet = pd.read_csv('D:\\ML\\Medicine-Recommendaton-system-main\\dataset\\diets.csv')
+workout = pd.read_csv('D:\\ML\\Medicine-Recommendaton-system-main\\dataset\\workout_df.csv')
+discription = pd.read_csv('D:\\ML\\Medicine-Recommendaton-system-main\\dataset\\description.csv')
+
 
 symptoms = pickle.load(open('symptoms.pkl', 'rb'))
 le = pickle.load(open('le.pkl', 'rb'))
