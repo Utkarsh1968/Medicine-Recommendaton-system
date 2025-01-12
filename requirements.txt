@@ -45,3 +45,4 @@ tzdata==2024.2
 urllib3==2.3.0
 watchdog==6.0.0
 setuptools>=65.5.0
+python_version >= 3.11
