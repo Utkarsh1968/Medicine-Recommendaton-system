@@ -8,11 +8,11 @@ import pickle
 with open('random_forest_model.pkl', 'rb') as file:
     model = pickle.load(file)
     
-pre = pd.read_csv('D:\\ML\\Medicine-Recommendaton-system-main\\dataset\\precautions_df.csv')
-medic = pd.read_csv('D:\\ML\\Medicine-Recommendaton-system-main\\dataset\\medications.csv')
-diet = pd.read_csv('D:\\ML\\Medicine-Recommendaton-system-main\\dataset\\diets.csv')
-workout = pd.read_csv('D:\\ML\\Medicine-Recommendaton-system-main\\dataset\\workout_df.csv')
-discription = pd.read_csv('D:\\ML\\Medicine-Recommendaton-system-main\\dataset\\description.csv')
+pre = pd.read_csv('./dataset/precautions_df.csv')
+medic = pd.read_csv('./dataset/medications.csv')
+diet = pd.read_csv('./dataset/diets.csv')
+workout = pd.read_csv('./dataset/workout_df.csv')
+discription = pd.read_csv('./dataset/description.csv')
 
 
 symptoms = pickle.load(open('symptoms.pkl', 'rb'))
